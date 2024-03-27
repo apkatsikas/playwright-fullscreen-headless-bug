@@ -35,8 +35,23 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    }
+      name: 'Chromium',
+      use: {
+        ...devices['Desktop Chrome']
+      }
+    },
+    {
+      name: 'Firefox',
+      use: {
+        ...devices['Desktop Firefox']
+      }
+    },
+    {
+      name: 'Chrome branded',
+      use: {
+        ...devices['Desktop Chrome'],
+        channel: 'chrome'
+      }
+    },
   ],
 });
