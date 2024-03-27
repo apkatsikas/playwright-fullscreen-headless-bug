@@ -52,6 +52,6 @@ export default defineConfig({
         ...devices['Desktop Chrome'],
         channel: 'chrome'
       }
-    },
+    }
   ],
 });
